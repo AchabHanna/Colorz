@@ -1,0 +1,10 @@
+.cache/
+
+# compiled output
+/dist
+
+# Dependency directories
+node_modules/
+
+# System Files
+.DS_Store
