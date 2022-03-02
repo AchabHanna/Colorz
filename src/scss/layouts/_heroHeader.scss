@@ -1,0 +1,110 @@
+.heroHeader {
+	background-image: url("/assets/images/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 570px;
+
+	@include medium {
+		height: 780px;
+		background-size: initial;
+	}
+
+	&__advertisingMessage {
+		background-color: $blue;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 9px;
+		font-family: "lato";
+		letter-spacing: 2.8px;
+		height: 30px;
+
+		@include flexbox(center, center);
+
+		@include small {
+			font-size: 11px;
+		}
+	}
+
+	&__logo {
+		width: 133px;
+		height: 19px;
+
+		@include medium {
+			width: 195px;
+			height: 28px;
+		}
+	}
+
+	&__items {
+		margin-top: 56px;
+
+		@include small {
+			margin-top: 27px;
+		}
+	}
+
+	&__line {
+		width: 100vw;
+		height: 1px;
+		margin-top: 98px;
+		z-index: 2;
+		position: absolute;
+		background-color: $blue;
+		opacity: 0.15;
+	}
+}
+
+.discovery {
+	color: $white;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 174px;
+	max-width: 376px;
+
+	@include small {
+		max-width: 413px;
+		padding: 180px 30px 0 30px;
+	}
+
+	@include medium {
+		max-width: 413px;
+		margin-left: 189px;
+		padding: 318px 30px 0 30px;
+	}
+
+	&__title {
+		font-family: "lato";
+		font-size: 11px;
+		letter-spacing: 3.3px;
+		margin-bottom: 14px;
+	}
+
+	&__description {
+		font-family: "cormorant";
+		font-size: 38px;
+		line-height: 40px;
+		letter-spacing: 3.8px;
+		margin-bottom: 0;
+	}
+
+	&__button {
+		width: 150px;
+		height: 52px;
+		margin-top: 30px;
+		text-transform: uppercase;
+		color: $white;
+		background-color: transparent;
+		border: 1px solid $white;
+		border-radius: 2px;
+		outline: none;
+		font-size: 11px;
+		letter-spacing: 0.3rem;
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			background-color: $white 0.3;
+			color: $blue;
+		}
+	}
+}

@@ -1,0 +1,122 @@
+.heroHeader__container {
+	width: 100vw;
+	position: absolute;
+	top: 0;
+
+	&--isOpen {
+		background-color: white;
+		height: 100vh;
+		@include large {
+			background-color: transparent;
+		}
+	}
+}
+
+.heroHeader .heroHeader__navbar {
+	padding-top: 22px;
+}
+
+.navbar__button {
+	width: 15px;
+	height: 13px;
+	position: relative;
+	transition: 0.5s ease-in-out;
+	background-color: transparent;
+}
+
+.navbar__button,
+.navbar__button:focus,
+.navbar__button:active,
+.navbar__button-icon:focus {
+	outline: none;
+	box-shadow: none;
+	border: 0;
+}
+
+.navbar__button .navbar__icon {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar__icon {
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: $white;
+	border-radius: 1px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: 0.1s ease-in-out;
+}
+
+.navbar__icon--middleBar {
+	margin-top: 0;
+}
+
+.navbar__button .navbar__icon--topBar {
+	margin-top: 6px;
+	transform: rotate(138deg);
+	background-color: $blue;
+}
+
+.navbar__button .navbar__icon--middleBar {
+	margin-top: 6px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar__button .navbar__icon--bottomBar {
+	margin-top: 6px;
+	transform: rotate(-135deg);
+	background-color: $blue;
+}
+
+.navbarToggler.collapsed .navbar__icon--topBar {
+	margin-top: 0px;
+	transform: rotate(0deg);
+	background-color: $white;
+}
+
+.navbarToggler.collapsed .navbar__icon--middleBar {
+	margin-top: 6px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbarToggler.collapsed .navbar__icon--bottomBar {
+	margin-top: 12px;
+	transform: rotate(0deg);
+	background-color: $white;
+}
+
+.navbarToggler.collapsed .toggle-icon {
+	background-color: $blue;
+}
+
+.heroHeader__itemsContainer {
+	@include medium {
+		justify-content: center;
+	}
+
+	.heroHeader__item {
+		font-size: 11px;
+		font-family: "lato";
+		text-transform: uppercase;
+		margin-bottom: 14px;
+		letter-spacing: 0.3rem;
+		@include flexbox(row, space-between, center);
+		@include medium {
+			margin: 0 2px;
+		}
+
+		.nav-link {
+			color: $blue;
+
+			@include large {
+				color: $white;
+			}
+		}
+	}
+}

@@ -1,3 +1,5 @@
-@import 'global/reset';
-@import 'global/variables';
-@import 'layouts/test';
+@import "global/reset";
+@import "global/variables";
+@import "global/mixins";
+@import "layouts/heroHeader";
+@import "layouts/nav";

@@ -1,0 +1,39 @@
+// BREAKPOINTS
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+
+@mixin small {
+	@media (min-width: $small) {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media (min-width: $medium) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media (min-width: $large) {
+		@content;
+	}
+}
+
+@mixin extraLarge {
+	@media (max-width: $extraLarge) {
+		@content;
+	}
+}
+
+// UTILITIES
+
+@mixin flexbox($direction: row, $justify: space-between, $align: center) {
+	display: flex;
+	justify-content: $justify;
+	flex-direction: $direction;
+	align-items: $align;
+}
