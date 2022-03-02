@@ -101,22 +101,19 @@
 	}
 
 	.heroHeader__item {
-		font-size: 11px;
-		font-family: "lato";
-		text-transform: uppercase;
 		margin-bottom: 14px;
-		letter-spacing: 0.3rem;
+
 		@include flexbox(row, space-between, center);
 		@include medium {
 			margin: 0 2px;
 		}
+	}
 
-		.nav-link {
-			color: $blue;
+	.item__link {
+		color: $blue;
 
-			@include large {
-				color: $white;
-			}
+		@include large {
+			color: $white;
 		}
 	}
 }

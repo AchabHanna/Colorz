@@ -24,7 +24,7 @@ $extraLarge: 1200px;
 }
 
 @mixin extraLarge {
-	@media (max-width: $extraLarge) {
+	@media (min-width: $extraLarge) {
 		@content;
 	}
 }

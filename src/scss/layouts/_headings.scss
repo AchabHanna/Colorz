@@ -1,0 +1,61 @@
+.headings__container {
+	margin: 40px 0 0 20px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	.heading__item {
+		position: relative;
+	}
+
+	.heading__link {
+		text-decoration: none;
+	}
+
+	.heading__image {
+		width: 220px;
+		height: 102px;
+		border-radius: 2px;
+		margin-right: 10px;
+		object-fit: cover;
+		@include extraLarge {
+			width: 305px;
+			height: 90px;
+			margin-right: 20px;
+		}
+	}
+
+	.heading__title {
+		color: $white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.progressBar {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	@include flexbox(center, center);
+
+	&__container {
+		width: 220px;
+		height: 2px;
+		background-color: $blue_light;
+
+		@include medium {
+			width: 320px;
+		}
+	}
+
+	&__progressBar {
+		height: 2px;
+		background-color: $blue !important;
+		width: 0%;
+	}
+}
