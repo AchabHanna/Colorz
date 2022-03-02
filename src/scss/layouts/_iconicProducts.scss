@@ -1,0 +1,132 @@
+.iconicProducts {
+	position: relative;
+	margin-top: 52px;
+	overflow: hidden;
+
+	@include large {
+		margin-top: 112px;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__firstPartTitle {
+		font-size: 11px;
+		letter-spacing: 3.3px;
+		font-family: "lato";
+		color: $gold;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+
+	&__secondPartTitle {
+		font-size: 28px;
+		letter-spacing: 2.8px;
+		font-family: "cormorant";
+		color: $blue;
+		text-transform: uppercase;
+	}
+
+	&__deco {
+		position: absolute;
+		z-index: 2;
+
+		&--firstElement {
+			top: -34px;
+			right: 282px;
+		}
+
+		&--secondElement {
+			left: 301px;
+			top: 395px;
+		}
+	}
+
+	.slider {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		margin-top: 32px;
+		margin-left: 20px;
+		position: relative;
+
+		@include large {
+			margin-left: 80px;
+		}
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		&__image {
+			width: 278px;
+			margin-right: 10px;
+
+			@include extraLarge {
+				width: 412px;
+				height: 550px;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.product {
+		margin-top: 18px;
+		text-align: center;
+
+		&__description {
+			font-size: 12px;
+			line-height: 21px;
+			font-family: "lato";
+			color: $blue;
+
+			&--price {
+				color: $gold;
+			}
+		}
+
+		&__detail {
+			color: $blue_light;
+		}
+	}
+
+	.slider__button {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.13);
+		background-color: $white;
+		position: absolute;
+		outline: none;
+		border: none;
+		top: 50%;
+		right: 0;
+		transform: translate(-30%, -12px);
+
+		&--left {
+			left: 34px;
+
+			@include large {
+				left: 94px;
+			}
+		}
+
+		&--right {
+			right: 0;
+		}
+	}
+
+	.iconicProducts__deco2 {
+		position: absolute;
+	}
+
+	.iconicProducts__buttonDiscovery {
+		color: $blue;
+		border: 1px solid $blue_light;
+	}
+
+	.iconicProducts__buttonContainer {
+		@include flexbox(row, center, center);
+	}
+}
