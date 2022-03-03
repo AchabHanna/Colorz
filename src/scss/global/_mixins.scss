@@ -4,6 +4,7 @@ $small: 576px;
 $medium: 768px;
 $large: 992px;
 $extraLarge: 1200px;
+$extraExtraLarge: 1400px;
 
 @mixin small {
 	@media (min-width: $small) {
@@ -25,6 +26,12 @@ $extraLarge: 1200px;
 
 @mixin extraLarge {
 	@media (min-width: $extraLarge) {
+		@content;
+	}
+}
+
+@mixin extraExtraLarge {
+	@media (min-width: $extraExtraLarge) {
 		@content;
 	}
 }

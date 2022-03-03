@@ -1,18 +1,19 @@
 @font-face {
-    font-family: "cormorant";
-    src: url("assets/fonts/cormorant-garamond-v14-latin-regular.woff2") format("woff2"),
-           url("assets/fonts/cormorant-garamond-v14-latin-regular.woff") format("woff");
-   }
+	font-family: "cormorant";
+	src: url("/assets/fonts/cormorant-garamond-v14-latin-regular.woff2")
+			format("woff2"),
+		url("/assets/fonts/cormorant-garamond-v14-latin-regular.woff")
+			format("woff");
+}
 
 @font-face {
-    font-family: "lato";
-    src: url("assets/fonts/lato-v22-latin-regular.woff2") format("woff2"),
-           url("assets/fonts/lato-v22-latin-regular.woff") format("woff");
-   }
+	font-family: "lato";
+	src: url("/assets/fonts/lato-v22-latin-regular.woff2") format("woff2"),
+		url("/assets/fonts/lato-v22-latin-regular.woff") format("woff");
+}
 
 @font-face {
-    font-family: "sacramento";
-    src: url("assets/fonts/sacramento-v12-latin-regular.woff2") format("woff2"),
-           url("assets/fonts/sacramento-v12-latin-regular.woff") format("woff");
-   }
-
+	font-family: "sacramento";
+	src: url("/assets/fonts/sacramento-v12-latin-regular.woff2") format("woff2"),
+		url("/assets/fonts/sacramento-v12-latin-regular.woff") format("woff");
+}

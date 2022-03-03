@@ -1,0 +1,140 @@
+.backToSchool {
+	height: 649px;
+	margin-top: 60px;
+	background-color: #d3a5a0;
+	position: relative;
+
+	@include extraLarge {
+		height: 800px;
+		margin: 100 80px;
+	}
+
+	&__container {
+		height: 100%;
+		padding-top: 54px;
+		@include flexbox(column, baseline, center);
+
+		@include medium {
+			margin: 0px 20px;
+			@include flexbox(row, space-between, center);
+		}
+
+		@include large {
+			margin: 0px 80px;
+		}
+	}
+
+	&__article {
+		position: relative;
+
+		@include large {
+			margin-left: 113px;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		color: $white;
+		margin-bottom: 0;
+
+		&--firstPart {
+			font-size: 11px;
+			font-family: "lato";
+			letter-spacing: 3.3px;
+			text-transform: uppercase;
+		}
+
+		&--secondPart {
+			font-size: 103px;
+			font-family: sacramento;
+
+			@include large {
+				font-size: 122px;
+			}
+
+			@include extraExtraLarge {
+				font-size: 170px;
+			}
+		}
+	}
+
+	&__image {
+		width: 220px;
+		z-index: 2;
+
+		@include medium {
+			order: -1;
+			width: 392px;
+		}
+
+		@include large {
+			width: 442px;
+		}
+
+		@include extraLarge {
+			width: 542px;
+		}
+
+		@include extraExtraLarge {
+			width: 630px;
+		}
+	}
+
+	.product {
+		position: absolute;
+		top: 270px;
+		left: 36px;
+		z-index: 3;
+
+		@include medium {
+			position: initial;
+			margin-top: -69px;
+			margin-left: 49px;
+		}
+
+		@include large {
+			margin-top: -84px;
+		}
+
+		@include extraExtraLarge {
+			position: initial;
+			margin-top: -122px;
+			margin-left: 65px;
+		}
+		&__image {
+			width: 221px;
+
+			@include medium {
+				width: 290px;
+			}
+
+			@include extraLarge {
+				width: 367px;
+			}
+		}
+
+		&__description {
+			text-align: center;
+			font-size: 12px;
+			font-family: "lato";
+			line-height: 21px;
+			margin-top: 30px;
+			color: $white;
+
+			&__type {
+				margin-right: 6px;
+			}
+
+			&__price {
+				margin-left: 4px;
+			}
+		}
+	}
+
+	.backToSchool__image {
+		margin-top: -34px;
+		@include large {
+			order: -1;
+		}
+	}
+}
