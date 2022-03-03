@@ -1,0 +1,81 @@
+.newsletter {
+	margin-top: 142px;
+	background-color: $blue;
+	background-image: url("/assets/images/newsletter_background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 409px;
+
+	@include flexbox(column, center, center);
+
+	&__info {
+		width: 230px;
+
+		@include large {
+			width: 392px;
+		}
+	}
+
+	&__image {
+		margin-bottom: 12px;
+		@include flexbox(row, center, center);
+	}
+
+	&__title {
+		color: $white;
+		line-height: 28px;
+		letter-spacing: 0.3rem;
+
+		&--modifier {
+			font-family: "cormorant";
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+		}
+	}
+
+	&__registration {
+		width: 290px;
+
+		@include large {
+			width: 413px;
+		}
+	}
+
+	&__input {
+		border: none;
+		background-color: transparent;
+		border-bottom: 1px solid white;
+		width: 228px;
+		height: 46px;
+		padding: 0;
+
+		@include large {
+			width: 343px;
+		}
+	}
+
+	&__button {
+		border: none;
+		background-color: transparent;
+		border-bottom: 1px solid white;
+		margin-left: -4px;
+		color: white;
+		@include large {
+			font-size: 14px;
+			height: 46px;
+			padding-right: 0;
+			padding-bottom: 2px;
+		}
+	}
+}
+
+input::placeholder {
+	color: $blue_light;
+	font-size: 12px;
+	font-family: "lato";
+	@include extraLarge {
+		font-size: 14px;
+	}
+}
