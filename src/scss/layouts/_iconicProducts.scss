@@ -12,20 +12,8 @@
 	}
 
 	&__firstPartTitle {
-		font-size: 11px;
-		letter-spacing: 3.3px;
-		font-family: "lato";
 		color: $gold;
-		text-transform: uppercase;
 		margin-bottom: 0;
-	}
-
-	&__secondPartTitle {
-		font-size: 28px;
-		letter-spacing: 2.8px;
-		font-family: "cormorant";
-		color: $blue;
-		text-transform: uppercase;
 	}
 
 	&__deco {
@@ -76,18 +64,16 @@
 		text-align: center;
 
 		&__description {
-			font-size: 12px;
-			line-height: 21px;
-			font-family: "lato";
 			color: $blue;
+		}
 
-			&--price {
-				color: $gold;
-			}
+		&__price {
+			color: $gold;
 		}
 
 		&__detail {
 			color: $blue_light;
+			margin-left: 4px;
 		}
 	}
 
