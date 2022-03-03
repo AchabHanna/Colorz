@@ -11,6 +11,13 @@
 	font-family: "cormorant";
 	color: $blue;
 	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+
+	@include extraLarge {
+		font-size: 38px;
+		margin-bottom: 40px;
+	}
 }
 
 .description {

@@ -1,0 +1,86 @@
+.storeServices {
+	margin-top: 60px;
+	position: relative;
+	@include flexbox(column, center, center);
+
+	@include large {
+		@include flexbox(row, space-between, center);
+	}
+
+	@include large {
+		margin-top: 1à0px;
+	}
+
+	&__description {
+		text-align: center;
+
+		@include large {
+			padding-left: 68px;
+		}
+
+		@include extraLarge {
+			padding-left: 128px;
+		}
+	}
+
+	&__firstPartTitle {
+		color: $gold;
+	}
+
+	&__details {
+		font-family: "lato";
+		font-size: 14px;
+		line-height: 21px;
+		color: $blue;
+	}
+
+	&__button {
+		color: $blue;
+		border: 1px solid $blue_light;
+	}
+
+	&__images {
+		margin-top: 40px;
+
+		@include flexbox(column, center, center);
+	}
+
+	&__firstImage {
+		width: 291px;
+		height: 387px;
+
+		@include large {
+			margin-right: 186px;
+			width: 408px;
+			height: 542px;
+		}
+
+		@include extraExtraLarge {
+			width: 522px;
+			height: 696px;
+			margin-right: 297px;
+		}
+	}
+
+	&__secondImage {
+		width: 191px;
+		height: 255px;
+		border: 8px solid $white;
+		position: absolute;
+		right: 50%;
+		transform: translate(50%, 56%);
+
+		@include large {
+			right: 80px;
+			transform: none;
+			width: 248px;
+			height: 332px;
+		}
+
+		@include extraExtraLarge {
+			border: 20px solid $white;
+			width: 305px;
+			height: 407px;
+		}
+	}
+}
