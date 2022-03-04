@@ -1,13 +1,15 @@
 .heroHeader {
 	background-image: url("/assets/images/background.png");
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: center;
+	background-position-x: -460px;
+	background-position-y: -44px;
 	height: 570px;
 
 	@include medium {
 		height: 780px;
-		background-size: initial;
+		background-position-x: center;
+		background-position-y: center;
 	}
 
 	&__advertisingMessage {
@@ -59,7 +61,8 @@
 	color: $white;
 	text-transform: uppercase;
 	text-align: center;
-	padding-top: 174px;
+	// padding: 174px 20px 0 20px;
+	padding: 162px 27px 0px 27px;
 	max-width: 376px;
 
 	@include small {
@@ -70,7 +73,7 @@
 	@include medium {
 		max-width: 413px;
 		margin-left: 189px;
-		padding: 318px 30px 0 30px;
+		padding-top: 318px;
 	}
 
 	&__title {
@@ -82,8 +85,9 @@
 		font-family: "cormorant";
 		font-size: 38px;
 		line-height: 40px;
-		letter-spacing: 3.8px;
+		letter-spacing: 0.1em;
 		margin-bottom: 0;
+		font-weight: bold;
 	}
 
 	&__button {
