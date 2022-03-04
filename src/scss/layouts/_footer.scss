@@ -1,0 +1,102 @@
+.footer {
+	margin-top: 60px;
+
+	@include extraExtraLarge {
+		margin-top: 100px;
+	}
+
+	.footer__services .carousel__indicator {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		margin-right: 14px;
+		border: 1px solid $blue;
+		background-color: transparent;
+	}
+
+	.carousel__indicator.active {
+		opacity: 1;
+		background-color: $blue;
+	}
+
+	.carousel__itemContainer {
+		height: 188px;
+		@include flexbox(column, center, center);
+	}
+
+	.carousel__imgContainer {
+		@include large {
+			height: 54px;
+		}
+	}
+
+	.carousel__serviceType {
+		font-size: 18px;
+		font-family: "cormorant";
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		color: $blue;
+		font-weight: bold;
+
+		@include large {
+			font-size: 11px;
+			font-weight: 400;
+			font-family: "lato";
+			letter-spacing: 0.3rem;
+		}
+	}
+
+	.carousel__serviceDetails {
+		@include large {
+			text-transform: initial;
+			font-size: 14px;
+			letter-spacing: 0;
+		}
+	}
+
+	.carousel__image {
+		margin-bottom: 16px;
+	}
+}
+
+.footer__divider {
+	width: 335px;
+	height: 1px;
+	margin-left: 50%;
+	transform: translate(-50%, 32px);
+	background-color: $blue;
+	opacity: 0.15;
+
+	@include extraLarge {
+		width: 1048px;
+	}
+
+	@include extraExtraLarge {
+		width: 1280px;
+	}
+}
+
+.footer__communication {
+	margin-top: 96px;
+	@include flexbox(column, center, center);
+}
+
+.footer__socialMedia {
+	width: 258px;
+	@include flexbox(row, space-between, center);
+
+	@include extraLarge {
+		width: 298px;
+	}
+}
+
+.footer__logo {
+	margin-top: 40px;
+	margin-bottom: 76px;
+}
+
+.carousel__container .carousel__item {
+	@include large {
+		display: block;
+	}
+}
