@@ -1,10 +1,10 @@
-let navbarButton = document.querySelector(".navbar__button");
+const navbarButton = document.querySelector(".navbar__button");
 
 navbarButton.addEventListener("click", () => {
-	let heroHeaderElements = document.querySelectorAll(
+	const heroHeaderElements = document.querySelectorAll(
 		".heroHeader__shoppingIcon, .heroHeader__logo, .heroHeader__line"
 	);
-	let navbarContainer = document.querySelector(".heroHeader__container");
+	const navbarContainer = document.querySelector(".heroHeader__container");
 
 	heroHeaderElements.forEach((element) => {
 		element.classList.toggle("d-none");

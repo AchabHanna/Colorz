@@ -17,6 +17,7 @@
 	}
 
 	&__advertisingMessage {
+		font-size: 9px;
 		background-color: $blue;
 		color: $white;
 		height: 30px;
@@ -41,7 +42,7 @@
 	&__items {
 		margin-top: 56px;
 
-		@include small {
+		@include large {
 			margin-top: 27px;
 		}
 	}

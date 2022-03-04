@@ -109,7 +109,7 @@
 		margin-bottom: 14px;
 
 		@include flexbox(row, space-between, center);
-		@include medium {
+		@include large {
 			margin: 0 2px;
 		}
 	}
