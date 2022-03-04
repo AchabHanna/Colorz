@@ -5,6 +5,7 @@
 
 	@include large {
 		margin-top: 112px;
+		padding-bottom: 52px;
 	}
 
 	&__title {
@@ -21,13 +22,20 @@
 		z-index: 2;
 
 		&--firstElement {
-			top: -34px;
-			right: 282px;
+			transform: translate(-50%, -31px);
+
+			@include extraExtraLarge {
+				transform: translate(-26%, -6px);
+			}
 		}
 
 		&--secondElement {
-			left: 301px;
-			top: 395px;
+			right: 0;
+			transform: translate(60%, -115px);
+
+			@include extraExtraLarge {
+				transform: translate(28%, -58px);
+			}
 		}
 	}
 
