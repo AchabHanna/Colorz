@@ -1,10 +1,4 @@
 .footer {
-	margin-top: 60px;
-
-	@include extraExtraLarge {
-		margin-top: 100px;
-	}
-
 	.footer__services .carousel__indicator {
 		width: 8px;
 		height: 8px;
@@ -17,6 +11,10 @@
 	.carousel__indicator.active {
 		opacity: 1;
 		background-color: $blue;
+	}
+
+	.carousel__container {
+		margin-top: 60px;
 	}
 
 	.carousel__itemContainer {
