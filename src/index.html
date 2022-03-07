@@ -1,556 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Colorz</title>
-		<link rel="stylesheet" href="scss/_styles.scss" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"
-		></script>
-		<script defer src="js/index.js"></script>
-	</head>
-	<body>
-		<main>
-			<section class="heroHeader">
-				<div class="heroHeader__container">
-					<div class="heroHeader__advertisingMessage title">
-						-50% sur nos articles dernière chance
-					</div>
-					<nav class="heroHeader__navbar navbar navbar-expand-lg">
-						<div
-							class="
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Colorz</title>
+	<link rel="stylesheet" href="scss/_styles.scss" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script defer src="js/index.js"></script>
+</head>
+
+<body>
+	<main>
+		<section class="heroHeader">
+			<div class="heroHeader__container">
+				<span class="heroHeader__advertisingMessage title">
+					-50% sur nos articles dernière chance
+				</span>
+				<nav class="heroHeader__navbar navbar navbar-expand-lg">
+					<div class="
 								container-fluid
 								align-items-end align-items-lg-center
 								flex-lg-column
 								p-lg-0
-							"
-						>
-							<button
-								class="
+							">
+						<button class="
 									navbar__button
 									navbarToggler
 									d-flex d-lg-none
 									flex-column
 									justify-content-between
 									collapsed
-								"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#navbarNavDropdown"
-								aria-controls="navbarNavDropdown"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar__icon navbar__icon--topBar"></span>
-								<span class="navbar__icon navbar__icon--middleBar"></span>
-								<span class="navbar__icon navbar__icon--bottomBar"></span>
-							</button>
+								" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar__icon navbar__icon--topBar"></span>
+							<span class="navbar__icon navbar__icon--middleBar"></span>
+							<span class="navbar__icon navbar__icon--bottomBar"></span>
+						</button>
 
-							<img
-								class="heroHeader__logo d-lg-block"
-								src="/assets/images/icons/logo_title.svg"
-								alt="logo blanc"
-							/>
-							<img
-								class="heroHeader__logo d-none d-lg-none"
-								src="/assets/images/icons/logo_title_blue.svg"
-								alt="logo bleu"
-							/>
-							<img
-								class="heroHeader__shoppingIcon d-lg-none"
-								src="/assets/images/icons/shopping_cart.svg"
-								alt="icon panier blanc"
-							/>
-							<img
-								class="heroHeader__shoppingIcon d-none d-lg-none"
-								src="/assets/images/icons/shopping_cart_blue.svg"
-								alt="icon panier bleu"
-							/>
-							<div
-								class="heroHeader__itemsContainer collapse navbar-collapse"
-								id="navbarNavDropdown"
-							>
-								<ul class="heroHeader__items navbar-nav">
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">naissance</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
+						<img class="heroHeader__logo d-lg-block" src="/assets/images/icons/logo_title.svg" alt="logo blanc" />
+						<img class="heroHeader__logo d-none d-lg-none" src="/assets/images/icons/logo_title_blue.svg"
+							alt="logo bleu" />
+						<img class="heroHeader__shoppingIcon d-lg-none" src="/assets/images/icons/shopping_cart.svg"
+							alt="icon panier blanc" />
+						<img class="heroHeader__shoppingIcon d-none d-lg-none" src="/assets/images/icons/shopping_cart_blue.svg"
+							alt="icon panier bleu" />
+						<div class="heroHeader__itemsContainer collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="heroHeader__items navbar-nav">
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">naissance</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
 
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">bébé</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">bébé</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
 
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">enfant</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">enfant</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
 
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">peluche</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">peluche</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
 
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">chambre</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">chambre</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
 
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">cadeaux</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">cadeaux</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
 
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">collaborations</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">collaborations</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
 
-									<li class="heroHeader__item title">
-										<a class="item__link nav-link" href="#">dernière chance</a>
-										<img
-											class="d-lg-none"
-											src="/assets/images/icons/chevronRight.svg"
-											alt="icon chevron"
-										/>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
-				<div class="heroHeader__line d-none d-lg-none"></div>
-				<div class="heroHeader__discovery discovery">
-					<p class="discovery__title title">découvrez</p>
-					<p class="discovery__description mb-0">les imprimés de la saison</p>
-					<button class="discovery__button button">découvrir</button>
-				</div>
-			</section>
-
-			<section class="headings">
-				<div class="headings__container justify-content-lg-center">
-					<div class="heading__item">
-						<a class="heading__link" href="">
-							<img
-								src="/assets/images/baby_section.png"
-								class="heading__image"
-								alt="catégorie bébé"
-							/>
-							<p class="heading__title title">bébé</p>
-						</a>
-					</div>
-
-					<div class="heading__item">
-						<a class="heading__link" href="">
-							<img
-								src="/assets/images/children_section.png"
-								class="heading__image"
-								alt="catégorie enfant"
-							/>
-							<p class="heading__title title">enfant</p>
-						</a>
-					</div>
-
-					<div class="heading__item">
-						<a class="heading__link" href="">
-							<img
-								src="/assets/images/pluch_section.png"
-								class="heading__image"
-								alt="catégorie peluche"
-							/>
-							<p class="heading__title title" href="">peluche</p>
-						</a>
-					</div>
-
-					<div class="heading__item">
-						<a class="heading__link" href="">
-							<img
-								src="/assets/images/rooms_section.png"
-								class="heading__image"
-								alt="catégorie chambre"
-							/>
-							<p class="heading__title title" href="">chambre</p>
-						</a>
-					</div>
-				</div>
-				<div class="headings__progressBar progressBar d-lg-none">
-					<div class="progressBar__container progress-container">
-						<div
-							class="progressBar__progressBar progress-bar"
-							id="progressBar"
-						></div>
-					</div>
-				</div>
-			</section>
-
-			<section class="iconicProducts">
-				<img
-					class="iconicProducts__deco iconicProducts__deco--firstElement"
-					src="/assets/images/forme_2v.png"
-					alt="élément de décoration"
-				/>
-				<div class="iconicProducts__title">
-					<p class="iconicProducts__firstPartTitle title mb-0">découvrez nos</p>
-					<p class="subtitle">iconiques</p>
-				</div>
-
-				<div id="container" class="iconicProducts__slider slider">
-					<div class="slider__slide">
-						<img
-							class="slider__image"
-							src="/assets/images/slider_img1.png"
-							alt=""
-						/>
-						<div class="slider__product product">
-							<p class="product__description text mb-0">
-								Augustin le lapin 1977
-								<span class="product__detail">gris clair</span>
-							</p>
-							<p class="product__price text mb-0">75 €</p>
+								<li class="heroHeader__item title">
+									<a class="item__link nav-link" href="#">dernière chance</a>
+									<img class="d-lg-none" src="/assets/images/icons/chevronRight.svg" alt="icon chevron" />
+								</li>
+							</ul>
 						</div>
 					</div>
+				</nav>
+			</div>
+			<div class="heroHeader__line d-none d-lg-none"></div>
+			<div class="heroHeader__discovery discovery">
+				<p class="discovery__title title">découvrez</p>
+				<h1 class="discovery__description mb-0">les imprimés de la saison</h1>
+				<button class="discovery__button button">découvrir</button>
+			</div>
+		</section>
 
-					<div>
-						<img
-							class="slider__image"
-							src="/assets/images/slider_img2.png"
-							alt="produit eau de senteur"
-						/>
-						<div class="slider__product product mb-0">
-							<p class="product__description text mb-0">
-								Eau de Senteur
-								<span class="product__detail">100 ML</span>
-							</p>
-							<p class="product__price text mb-0">50 €</p>
-						</div>
-					</div>
-
-					<div>
-						<img
-							class="slider__image"
-							src="/assets/images/slider_img3.png"
-							alt="produit couffin"
-						/>
-						<div class="slider__product product mb-0">
-							<p class="product__description text mb-0">
-								Couffin
-								<span class="product__detail">Made in France</span>
-							</p>
-							<p class="product__price text mb-0">175 €</p>
-						</div>
-					</div>
-
-					<div>
-						<img
-							class="slider__image"
-							src="/assets/images/slider_img4.png"
-							alt="produit robe rose pâle"
-						/>
-						<div class="slider__product product">
-							<p class="product__description text mb-0">
-								Robe
-								<span class="product__detail"
-									>rose pâle imprimé floral À partir de</span
-								>
-							</p>
-							<span class="product__price text mb-0"> 75 € </span>
-						</div>
-					</div>
+		<section class="headings">
+			<div class="headings__container justify-content-lg-center">
+				<div class="heading__item">
+					<a class="heading__link" href="">
+						<img src="/assets/images/baby_section.png" class="heading__image" alt="catégorie bébé" />
+						<p class="heading__title title">bébé</p>
+					</a>
 				</div>
 
-				<img
-					class="iconicProducts__deco iconicProducts__deco--secondElement"
-					src="/assets/images/forme_1.png"
-					alt=""
-				/>
-
-				<button
-					class="slider__button slider__button--left p-0 d-none"
-					id="previous"
-					type="button"
-				>
-					<img
-						src="/assets/images/icons/chevronLeft.svg"
-						alt="chevron gauche"
-					/>
-				</button>
-
-				<button
-					class="slider__button slider__button--right p-0"
-					id="next"
-					type="button"
-				>
-					<img src="/assets/images/icons/chevronRight.svg" alt="" />
-				</button>
-
-				<div class="iconicProducts__buttonContainer">
-					<button class="iconicProducts__buttonDiscovery button">
-						voir tous les iconiques
-					</button>
+				<div class="heading__item">
+					<a class="heading__link" href="">
+						<img src="/assets/images/children_section.png" class="heading__image" alt="catégorie enfant" />
+						<p class="heading__title title">enfant</p>
+					</a>
 				</div>
-			</section>
 
-			<section class="backToSchool container-fluid">
-				<div class="backToSchool__container">
-					<div class="backToSchool__article">
-						<p class="backToSchool__title title mb-0">le look de la</p>
-						<p class="backToSchool__title backToSchool__title--secondPart">
-							Rentrée
+				<div class="heading__item">
+					<a class="heading__link" href="">
+						<img src="/assets/images/pluch_section.png" class="heading__image" alt="catégorie peluche" />
+						<p class="heading__title title" href="">peluche</p>
+					</a>
+				</div>
+
+				<div class="heading__item">
+					<a class="heading__link" href="">
+						<img src="/assets/images/rooms_section.png" class="heading__image" alt="catégorie chambre" />
+						<p class="heading__title title" href="">chambre</p>
+					</a>
+				</div>
+			</div>
+			<div class="headings__progressBar progressBar d-lg-none">
+				<div class="progressBar__container progress-container">
+					<div class="progressBar__progressBar progress-bar" id="progressBar"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="iconicProducts">
+			<img class="iconicProducts__deco iconicProducts__deco--firstElement" src="/assets/images/forme_2v.png"
+				alt="élément de décoration" />
+			<div class="iconicProducts__title">
+				<p class="iconicProducts__firstPartTitle title mb-0">découvrez nos</p>
+				<h2 class="subtitle">iconiques</h2>
+			</div>
+
+			<div id="container" class="iconicProducts__slider slider">
+				<div class="slider__slide">
+					<img class="slider__image" src="/assets/images/slider_img1.png" alt="" />
+					<div class="slider__product product">
+						<p class="product__description text mb-0">
+							Augustin le lapin 1977
+							<span class="product__detail">gris clair</span>
 						</p>
-
-						<div class="backToSchool__product product">
-							<img
-								class="product__image"
-								src="/assets/images/robe-rose-pale-imprime-floral.png"
-								alt="robe rose pâle"
-							/>
-							<p class="product__description text">
-								<span class="product__type">Robe</span>
-								<span class="product__name">Rose pâle imprimé floral</span>
-								<br />
-								<span class="product__priceIndication">À partir de</span>
-								<span class="product__price text">75 €</span>
-							</p>
-						</div>
-					</div>
-					<div class="backToSchool__image">
-						<img
-							class="backToSchool__image"
-							src="/assets/images/back_to_school_section.png"
-							alt="fleurs"
-						/>
+						<p class="product__price text mb-0">75 €</p>
 					</div>
 				</div>
-			</section>
 
-			<section class="storeServices containerSection">
-				<div class="storeServices__description">
-					<p class="storeServices__firstPartTitle title">nos services</p>
-					<p class="subtitle">boutiques</p>
-					<p class="storeServices__details">
-						Réservation, livraison gratuite, découvrez <br />
-						tous nos services en boutiques
-					</p>
-					<button class="storeServices__button button">
-						trouver une boutique
-					</button>
-				</div>
-
-				<div class="storeServices__images">
-					<img
-						class="storeServices__firstImage"
-						src="/assets/images/store_section_img1.png"
-						alt="image boutique"
-					/>
-					<img
-						class="storeServices__secondImage"
-						src="/assets/images/store_section_img2.png"
-						alt="prafum chanel"
-					/>
-				</div>
-			</section>
-
-			<section class="newsletter">
-				<div class="newsletter__info">
-					<div class="newsletter__image">
-						<img src="/assets/images/hedgehog_newsletter.png" alt="" />
+				<div>
+					<img class="slider__image" src="/assets/images/slider_img2.png" alt="produit eau de senteur" />
+					<div class="slider__product product mb-0">
+						<p class="product__description text mb-0">
+							Eau de Senteur
+							<span class="product__detail">100 ML</span>
+						</p>
+						<p class="product__price text mb-0">50 €</p>
 					</div>
-					<p class="newsletter__title title">
-						abonnez vous à la <br />
-						<span class="newsletter__title newsletter__title--modifier"
-							>newsletter des herissons</span
-						>
-					</p>
 				</div>
-				<div class="newsletter__registration">
-					<input type="" class="newsletter__input" placeholder="Votre email" />
-					<button class="newsletter__button text" type="button">
-						S'inscrire
-					</button>
+
+				<div>
+					<img class="slider__image" src="/assets/images/slider_img3.png" alt="produit couffin" />
+					<div class="slider__product product mb-0">
+						<p class="product__description text mb-0">
+							Couffin
+							<span class="product__detail">Made in France</span>
+						</p>
+						<p class="product__price text mb-0">175 €</p>
+					</div>
 				</div>
-			</section>
 
-			<section class="footer containerSection">
-				<div class="footer__services">
-					<div
-						id="carouselExampleIndicators"
-						class="footer__carousel carousel slide"
-						data-bs-ride="carousel"
-					>
-						<div class="carousel-indicators d-lg-none">
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="0"
-								class="carousel__indicator active"
-								aria-current="true"
-								aria-label="Slide 1"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="1"
-								class="carousel__indicator"
-								aria-label="Slide 2"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="2"
-								class="carousel__indicator"
-								aria-label="Slide 3"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="3"
-								class="carousel__indicator"
-								aria-label="Slide 4"
-							></button>
-						</div>
+				<div>
+					<img class="slider__image" src="/assets/images/slider_img4.png" alt="produit robe rose pâle" />
+					<div class="slider__product product">
+						<p class="product__description text mb-0">
+							Robe
+							<span class="product__detail">rose pâle imprimé floral À partir de</span>
+						</p>
+						<span class="product__price text mb-0"> 75 € </span>
+					</div>
+				</div>
+			</div>
 
-						<div class="carousel__container carousel-inner container">
-							<div class="row">
-								<div class="carousel__item carousel-item active col">
-									<div class="carousel__itemContainer">
-										<div class="carousel__imgContainer">
-											<img
-												src="/assets/images/icons/gift.svg"
-												class="d-block carousel__image"
-												alt="emballage cadeau offert"
-											/>
-										</div>
-										<p class="carousel__serviceType">emballage cadeau</p>
-										<p class="carousel__serviceDetails title">offert</p>
+			<img class="iconicProducts__deco iconicProducts__deco--secondElement" src="/assets/images/forme_1.png" alt="" />
+
+			<button class="slider__button slider__button--left p-0 d-none" id="previous" type="button">
+				<img src="/assets/images/icons/chevronLeft.svg" alt="chevron gauche" />
+			</button>
+
+			<button class="slider__button slider__button--right p-0" id="next" type="button">
+				<img src="/assets/images/icons/chevronRight.svg" alt="" />
+			</button>
+
+			<div class="iconicProducts__buttonContainer">
+				<button class="iconicProducts__buttonDiscovery button">
+					voir tous les iconiques
+				</button>
+			</div>
+		</section>
+
+		<section class="backToSchool container-fluid">
+			<div class="backToSchool__container">
+				<div class="backToSchool__article">
+					<p class="backToSchool__title title mb-0">le look de la</p>
+					<h2 class="backToSchool__title backToSchool__title--secondPart">
+						Rentrée
+					</h2>
+
+					<div class="backToSchool__product product">
+						<img class="product__image" src="/assets/images/robe-rose-pale-imprime-floral.png" alt="robe rose pâle" />
+						<p class="product__description text">
+							<span class="product__type">Robe</span>
+							<span class="product__name">Rose pâle imprimé floral</span>
+							<br />
+							<span class="product__priceIndication">À partir de</span>
+							<span class="product__price text">75 €</span>
+						</p>
+					</div>
+				</div>
+				<div class="backToSchool__image">
+					<img class="backToSchool__image" src="/assets/images/back_to_school_section.png" alt="fleurs" />
+				</div>
+			</div>
+		</section>
+
+		<section class="storeServices containerSection">
+			<div class="storeServices__description">
+				<p class="storeServices__firstPartTitle title">nos services</p>
+				<h2 class="subtitle">boutiques</h2>
+				<p class="storeServices__details">
+					Réservation, livraison gratuite, découvrez <br />
+					tous nos services en boutiques
+				</p>
+				<button class="storeServices__button button">
+					trouver une boutique
+				</button>
+			</div>
+
+			<div class="storeServices__images">
+				<img class="storeServices__firstImage" src="/assets/images/store_section_img1.png" alt="image boutique" />
+				<img class="storeServices__secondImage" src="/assets/images/store_section_img2.png" alt="prafum chanel" />
+			</div>
+		</section>
+
+		<section class="newsletter">
+			<div class="newsletter__info">
+				<div class="newsletter__image">
+					<img src="/assets/images/hedgehog_newsletter.png" alt="" />
+				</div>
+				<p class="newsletter__title title">
+					abonnez vous à la <br />
+					<span class="newsletter__title newsletter__title--modifier">newsletter des herissons</span>
+				</p>
+			</div>
+			<div class="newsletter__registration">
+				<input type="" class="newsletter__input" placeholder="Votre email" />
+				<button class="newsletter__button text" type="button">
+					S'inscrire
+				</button>
+			</div>
+		</section>
+
+		<section class="footer containerSection">
+			<div class="footer__services">
+				<div id="carouselExampleIndicators" class="footer__carousel carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators d-lg-none">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="carousel__indicator active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							class="carousel__indicator" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							class="carousel__indicator" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+							class="carousel__indicator" aria-label="Slide 4"></button>
+					</div>
+
+					<div class="carousel__container carousel-inner container">
+						<div class="row">
+							<div class="carousel__item carousel-item active col">
+								<div class="carousel__itemContainer">
+									<div class="carousel__imgContainer">
+										<img src="/assets/images/icons/gift.svg" class="d-block carousel__image"
+											alt="emballage cadeau offert" />
 									</div>
+									<p class="carousel__serviceType">emballage cadeau</p>
+									<p class="carousel__serviceDetails title">offert</p>
 								</div>
+							</div>
 
-								<div class="carousel__item carousel-item col">
-									<div class="carousel__itemContainer">
-										<div class="carousel__imgContainer">
-											<img
-												src="/assets/images/icons/delivery.svg"
-												class="d-block carousel__image"
-												alt="livraison rapide"
-											/>
-										</div>
-										<p class="carousel__service carousel__serviceType">
-											livraison
-										</p>
-										<p class="carousel__serviceDetails title">rapide</p>
+							<div class="carousel__item carousel-item col">
+								<div class="carousel__itemContainer">
+									<div class="carousel__imgContainer">
+										<img src="/assets/images/icons/delivery.svg" class="d-block carousel__image"
+											alt="livraison rapide" />
 									</div>
+									<p class="carousel__service carousel__serviceType">
+										livraison
+									</p>
+									<p class="carousel__serviceDetails title">rapide</p>
 								</div>
+							</div>
 
-								<div class="carousel__item carousel-item col">
-									<div class="carousel__itemContainer">
-										<div class="carousel__imgContainer">
-											<img
-												src="/assets/images/icons/return.svg"
-												class="d-block carousel__image"
-												alt="retours offerts"
-											/>
-										</div>
-										<p class="carousel__serviceType">retours offerts</p>
-										<p class="carousel__serviceDetails title">
-											sous conditions*
-										</p>
+							<div class="carousel__item carousel-item col">
+								<div class="carousel__itemContainer">
+									<div class="carousel__imgContainer">
+										<img src="/assets/images/icons/return.svg" class="d-block carousel__image" alt="retours offerts" />
 									</div>
+									<p class="carousel__serviceType">retours offerts</p>
+									<p class="carousel__serviceDetails title">
+										sous conditions*
+									</p>
 								</div>
+							</div>
 
-								<div class="carousel__item carousel-item col">
-									<div class="carousel__itemContainer">
-										<div class="carousel__imgContainer">
-											<img
-												src="/assets/images/icons/card_payment.svg"
-												class="d-block carousel__image"
-												alt="paiement sécurisé"
-											/>
-										</div>
-										<p class="carousel__serviceType">paiement sécurisé</p>
-										<p class="carousel__serviceDetails title">
-											CB, Visa, Mastercard, Paypal
-										</p>
+							<div class="carousel__item carousel-item col">
+								<div class="carousel__itemContainer">
+									<div class="carousel__imgContainer">
+										<img src="/assets/images/icons/card_payment.svg" class="d-block carousel__image"
+											alt="paiement sécurisé" />
 									</div>
+									<p class="carousel__serviceType">paiement sécurisé</p>
+									<p class="carousel__serviceDetails title">
+										CB, Visa, Mastercard, Paypal
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="footer__divider"></div>
-				<div class="footer__communication">
-					<div class="footer__socialMedia">
-						<img
-							src="/assets/images/facebook_icon.svg"
-							alt="facebook icône"
-							class=""
-						/>
-						<img
-							src="/assets/images/instagram_icon.svg"
-							alt="instagram icône"
-							class=""
-						/>
-						<img
-							src="assets/images/pinterest_icon.svg"
-							alt="pinterest icône"
-							class=""
-						/>
-						<img
-							src="assets/images/youtube_icon.svg"
-							alt="youtube icône"
-							class=""
-						/>
-						<img
-							src="assets/images/linkedin_icon.svg"
-							alt="linkedin icône"
-							class=""
-						/>
-					</div>
-					<img
-						class="footer__logo"
-						src="/assets/images/icons/logo.svg"
-						alt="logo"
-					/>
+			<div class="footer__divider"></div>
+			<div class="footer__communication">
+				<div class="footer__socialMedia">
+					<img src="/assets/images/facebook_icon.svg" alt="facebook icône" class="" />
+					<img src="/assets/images/instagram_icon.svg" alt="instagram icône" class="" />
+					<img src="assets/images/pinterest_icon.svg" alt="pinterest icône" class="" />
+					<img src="assets/images/youtube_icon.svg" alt="youtube icône" class="" />
+					<img src="assets/images/linkedin_icon.svg" alt="linkedin icône" class="" />
 				</div>
-			</section>
-		</main>
-	</body>
+				<img class="footer__logo" src="/assets/images/icons/logo.svg" alt="logo" />
+			</div>
+		</section>
+	</main>
+</body>
+
 </html>
